@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+
+/* Cores do projeto
+ Verde escuro acinzentado: #3a4e45
+ Vermelho escuro: #530501
+ Amarelo escuro: #530501
+*/
+
+:root {
+    --fonttitulo: font-family: "UnifrakturMaguntia", cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: var(--fonttitulo);
+    font-size: 2em;
+    color: white;
+}
+
+main {
+    background: black url(../fundo.jpeg);
+}
