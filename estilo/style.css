@@ -16,17 +16,18 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
-h1 {
-    padding-top: 15px;
+section#pagina > div#titulo > h1 {
+    padding-top: 25px;
     text-align: center;
     font-family: var(--fonttitulo);
-    font-size: 2.7em;
+    font-size: 2.3em;
     color: white;
 }
 
-h2 {
+section#pagina > div#titulo > h2 {
     font-family: var(--fontsub);
     font-weight: normal;
     font-size: 1.1em;
@@ -42,19 +43,50 @@ div#titulo {
     background-repeat: no-repeat;
 }
 
-body {
-    height: 100%;
+body, html {
+    height: 100vh;
+    width: 100vw;
     background-image: linear-gradient(to bottom, #3a4e45, #530501);
 }
 
 main {
-    padding-top: 20px;
-    display: block;
-    margin: auto;
-    width: 85vw;
-    height: 650px;
-    background: rgba(255, 255, 255, 0.692);
-    border-radius: 20px;
-    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.836);
+     position: relative;
+     height: 100vh;
+     width: 100vw;
+}
 
+section#pagina {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.753);
+
+
+    background-color: rgba(255, 255, 255, 0.644);
+    width: 300px;
+    height: 640px;
+    border-radius: 10px;
+
+    transform: translate(-50%, -50%);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+section#pagina > div#formulario > h2 {
+    font-family: var(--fontsub);
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+section#pagina > div#formulario > p {
+    font-family: var(--fontsub);
+    text-align: center;
+    font-size: .8em;
+}
+
+p#sexo, p#raca {
+    padding-top: 5px;
 }
