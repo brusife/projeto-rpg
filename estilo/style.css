@@ -38,10 +38,18 @@ section#pagina > div#titulo > h2 {
     text-align: center;
 }
 
+#divisoria {
+    display: none;
+}
+
+#divisoria2 {
+    display: none;
+}
+
 div#titulo {
     height: 15vh;
     background: black url(../fundo.jpeg);
-    background-position: center top;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -49,7 +57,7 @@ div#titulo {
 body, html {
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(to bottom, #3a4e45, #530501);
+    background-image: linear-gradient(to bottom, #4f685c, #2e0200);
 }
 
 main {
@@ -63,17 +71,23 @@ section#pagina {
     top: 50%;
     left: 50%;
     overflow: hidden;
-    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.753);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.904);
 
 
     background-color: rgba(255, 255, 255, 0.76);
     width: 370px;
     height: 680px;
-    border-radius: 10px;
+    border-radius: 20px 0px;
 
     transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+}
+
+input[type='text'] {
+    font-family: var(--fontsub);
+    text-align: center;
+    font-size: 1.5em;
 }
 
 div#topoform {
@@ -103,14 +117,19 @@ div#formulario > p {
     font-size: .7em;
 }
 
+#nomee {
+    display: none;
+}
 
 strong {
     font-size: 1.3em;
 }
 
 #inome {
-    height: 30px;
-    width: 68.3%;
+    display: block;
+    margin: auto;
+    height: 33px;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.849);
     border: 0px;
 }
@@ -153,14 +172,14 @@ div#fisico > p {
     font-family: var(--fontsub);
     font-size: 1.5em;
     display: block;
-    background: #751510;
+    background: black;
     color: white;
     height: 55px;
     width: 100%;
 }
 
 #submit:hover {
-    background-color: #000000;
+    background-color: #751510;
     font-weight: bolder;
 }
 
@@ -169,4 +188,305 @@ input[type='range'] {
     float: inline-end;
     width: 50%;
     accent-color: #751510;
+}
+
+/*--------------- TABLETS ------------------------*/
+
+@media screen and (min-width: 688px) and (max-width:992px) {
+
+body {
+    background: #2e0200 url(../fundo.jpeg)no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+section#pagina {
+    width: 93vw;
+}
+
+div#titulo {
+    background: #000000ad;
+    height: 16vh;
+    box-shadow: inset 0px 0px 80px #75151052 ;
+}
+
+section#pagina > div#titulo > h1 {
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.432);
+    padding-top: 30px;
+    padding-left: 8px;
+    text-align: center;
+    font-family: var(--fonttitulo);
+    font-size: 3.1em;
+    color: white;
+}
+
+section#pagina > div#titulo > h2 {
+    text-align: center;
+    padding-left: 8px;
+}
+
+div#topoform {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 1px 7px rgba(255, 255, 255, 0);
+}
+
+div#topoform > h2 {
+    padding-top: 10px;
+    font-family: var(--fontsub);
+    padding-left: 8px;
+    text-align: left;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+#divisoria {
+    display: block;
+    float: inline-end;
+    width: 53%;
+    border-color: black;
+}
+
+#divisoria2 {
+    display: block;
+    float: inline-start;
+    width: 50%;
+    border-color: black;
+}
+
+
+div#topoform > p {
+    font: var(--fontsub);
+    padding-left: 8px;
+    text-align: left;
+    font-size: .9em;
+    padding-bottom: 10px;
+}
+
+#nomee {
+    display: inline-block;
+    padding: 5px 0px;
+}
+
+#inome {
+    float: inline-end ;
+    height: 33px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.849);
+    border: 0px;
+}
+
+div#fisico{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 1px 7px rgba(255, 255, 255, 0);
+}
+
+
+div#fisico > h2 {
+    font-family: var(--fontsub);
+    padding-left: 8px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+div#fisico > p {
+    font: var(--fontsub);
+    padding-left: 8px;
+    text-align: left;
+    font-size: .9em;
+    padding-bottom: 10px;
+}
+
+#submit {
+    float: inline-end;
+    cursor: pointer;
+    border: 0px;
+    font-family: var(--fontsub);
+    font-size: 1.5em;
+    display: block;
+    background: black;
+    color: white;
+    height: 45px;
+    width: 53%;
+    border-radius: 20px 0px 0px 0px;
+}
+
+#submit:hover {
+    background-color: #751510;
+    font-weight: bolder;
+}
+
+
+input[type='range'] {
+    float: inline-end;
+    width: 40%;
+    accent-color: #751510;
+}
+
+select {
+    float: inline-end;
+    background-color: rgba(255, 255, 255, 0.849);
+    border: 0px;
+    height: 30px;
+    width: 40%;
+}
+
+}
+
+/*--------------- TELAS MAIORES ------------------------*/
+
+@media screen and (min-width: 992px) { 
+    body {
+        background: #2e0200 url(../fundo.jpeg)no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    section#pagina {
+        top: 49.5%;
+        width: 900px;
+        height: 780px;
+        border-radius: 0px;
+        background-color: rgba(255, 255, 255, 0.74);
+    }
+    
+    div#titulo {
+        background: #00000000;
+        height: 16vh;
+    }
+    
+    section#pagina > div#titulo > h1 {
+        
+        padding-top: 35px;
+        padding-left: 8px;
+        text-align: left;
+        font-family: var(--fonttitulo);
+        font-size: 3.5em;
+        color: black;
+    }
+    
+    section#pagina > div#titulo > h2 {
+        text-align: left;
+        color: #000000;
+        padding-left: 8px;
+        font-size: 1.3em;
+    }
+    
+    div#formulario p {
+        font-size: .9em;
+    }
+
+    div#topoform {
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(0, 0, 0);
+        box-shadow: 0px 1px 7px rgba(255, 255, 255, 0);
+    }
+    
+    div#topoform > h2 {
+        padding-top: 10px;
+        font-family: var(--fontsub);
+        padding-left: 8px;
+        text-align: left;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-size: 1.3em;
+    }
+    
+    #divisoria {
+        display: none;
+    }
+    
+    #divisoria2 {
+        display: block;
+        float: inline-start;
+        width: 100%;
+        border-color: rgba(0, 0, 0, 0.356);
+    }
+    
+    
+    div#topoform > p {
+        font: var(--fontsub);
+        padding-left: 8px;
+        text-align: left;
+        font-size: 1.2em;
+        padding-bottom: 10px;
+    }
+    
+    #nomee {
+        display: inline-block;
+        padding: 5px 0px;
+        padding-right: 8px;
+    }
+    
+    #inome {
+        display: inline-block ;
+        height: 33px;
+        width: 80%;
+        background-color: rgba(255, 255, 255, 0.849);
+        border: 0px;
+    }
+    
+
+    div#fisico{
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(0, 0, 0);
+        box-shadow: 0px 1px 7px rgba(255, 255, 255, 0);
+    }
+    
+    
+    div#fisico > h2 {
+        font-family: var(--fontsub);
+        padding-left: 8px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        text-align: left;
+    }
+    
+    div#fisico > p {
+        font: var(--fontsub);
+        padding-left: 8px;
+        text-align: left;
+        font-size: 1.2em;
+        padding-bottom: 10px;
+    }
+    
+    #submit {
+        float: inline-end;
+        cursor: pointer;
+        border: 0px;
+        font-family: var(--fontsub);
+        font-size: 1.5em;
+        display: block;
+        background: black;
+        color: white;
+        height: 45px;
+        width: 53%;
+        border-radius: 20px ;
+    }
+    
+    #submit:hover {
+        background-color: #751510;
+        font-weight: bolder;
+    }
+    
+    
+    input[type='range'] {
+        float: inline-end;
+        width: 40%;
+        accent-color: #751510;
+    }
+    
+    select {
+        float: inline-end;
+        background-color: rgba(255, 255, 255, 0.849);
+        border: 0px;
+        height: 30px;
+        width: 40%;
+    }
+
 }

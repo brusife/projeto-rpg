@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPG System (sem retorno)</title>
+    <title>R.P.G. System - Torne sua aventura mais épica!</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
@@ -13,16 +14,19 @@
                 <h1>R.P.G. system</h1>
                 <h2>Torne sua aventura mais épica!</h2>
             </div>
-            <form action="ficha.php">
+            <form action="#">
                 <div id="formulario">
                     <div id="topoform">
+                        <hr id="divisoria2">
                         <h2>Crie seu personagem</h2>
+                        <hr id="divisoria">
                         <p>Preencha os dados da ficha do seu personagem</p>
+                        <hr id="divisoria2">
                 
                     </div>
                     <p>
-                        <label for="inome"><strong>Nome completo:</strong></label>
-                        <input type="text" name="Nome" id="inome" required placeholder="Nome do seu personagem" maxlength="30">
+                        <label for="inome"><strong id="nomee">Nome completo:</strong></label>
+                        <input type="text" name="Nome" id="inome" required placeholder="Nome do seu personagem" autocomplete="off" maxlength="30">
                     </p>
                 
                     <p id="sexo">
@@ -62,7 +66,9 @@
                     <p>
                         <div id="fisico">
                             <h2>Atributos Físicos</h2>
+                            <hr id="divisoria">
                             <p>Defina os valores dos atributos do seu personagem</p>
+                            <hr id="divisoria2">
                         </div>
                     </p>
 
