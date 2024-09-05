@@ -1,0 +1,1 @@
+Se você está vendo esta tela, é porquê eu ainda não aprendi PHP, e não foi possível criar sua ficha, mas acompanhe este projeto que logo logo você conseguirá fazer sua ficha!

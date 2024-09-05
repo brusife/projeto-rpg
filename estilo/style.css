@@ -20,17 +20,20 @@
 }
 
 section#pagina > div#titulo > h1 {
-    padding-top: 25px;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.432);
+    padding-top: 15px;
     text-align: center;
     font-family: var(--fonttitulo);
-    font-size: 2.3em;
+    font-size: 2.6em;
     color: white;
 }
 
 section#pagina > div#titulo > h2 {
+    padding-top: 5px;
+    text-shadow: 0px 0px 9px rgba(0, 0, 0, 0.836);
     font-family: var(--fontsub);
     font-weight: normal;
-    font-size: 1.1em;
+    font-size: 1em;
     color: rgb(223, 223, 223);
     text-align: center;
 }
@@ -63,9 +66,9 @@ section#pagina {
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.753);
 
 
-    background-color: rgba(255, 255, 255, 0.644);
-    width: 300px;
-    height: 640px;
+    background-color: rgba(255, 255, 255, 0.76);
+    width: 370px;
+    height: 680px;
     border-radius: 10px;
 
     transform: translate(-50%, -50%);
@@ -73,20 +76,97 @@ section#pagina {
     transition-timing-function: ease;
 }
 
-section#pagina > div#formulario > h2 {
+div#topoform {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.479);
+}
+
+div#topoform > h2 {
     font-family: var(--fontsub);
     text-align: center;
-    font-weight: bold;
+    font-weight: bolder;
     text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+div#topoform > p {
+    font: var(--fontsub);
+    text-align: center;
+    font-size: .9em;
+    padding-bottom: 10px;
+}
+
+div#formulario > p {
+    font-family: var(--fontsub);
+    padding: 8px;
+    font-size: .7em;
+}
+
+
+strong {
     font-size: 1.3em;
 }
 
-section#pagina > div#formulario > p {
-    font-family: var(--fontsub);
-    text-align: center;
-    font-size: .8em;
+#inome {
+    height: 30px;
+    width: 68.3%;
+    background-color: rgba(255, 255, 255, 0.849);
+    border: 0px;
 }
 
-p#sexo, p#raca {
-    padding-top: 5px;
+select {
+    float: inline-end;
+    background-color: rgba(255, 255, 255, 0.849);
+    border: 0px;
+    height: 30px;
+    width: 50%;
+
+}
+
+div#fisico{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.479);
+}
+
+div#fisico > h2 {
+    font-family: var(--fontsub);
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+div#fisico > p {
+    font: var(--fontsub);
+    text-align: center;
+    font-size: .9em;
+    padding-bottom: 10px;
+}
+
+
+
+#submit {
+    cursor: pointer;
+    border: 0px;
+    font-family: var(--fontsub);
+    font-size: 1.5em;
+    display: block;
+    background: #751510;
+    color: white;
+    height: 55px;
+    width: 100%;
+}
+
+#submit:hover {
+    background-color: #000000;
+    font-weight: bolder;
+}
+
+
+input[type='range'] {
+    float: inline-end;
+    width: 50%;
+    accent-color: #751510;
 }

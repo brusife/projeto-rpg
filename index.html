@@ -10,37 +10,89 @@
     <main>
         <section id="pagina">
             <div id="titulo">
-                <h1>RPG system</h1>
+                <h1>R.P.G. system</h1>
                 <h2>Torne sua aventura mais épica!</h2>
             </div>
-            <div id="formulario">
-                <h2>Crie seu personagem</h2>
-                <p>Preencha os dados da ficha do seu personagem</p>
-                <br>
-                <p>
-                    <label for="inome"><strong>Nome:</strong></label>
-                    <input type="text" name="Nome" id="inome" required placeholder="Nome do seu personagem">
-                </p>
+            <form action="ficha.php">
+                <div id="formulario">
+                    <div id="topoform">
+                        <h2>Crie seu personagem</h2>
+                        <p>Preencha os dados da ficha do seu personagem</p>
                 
-                <p id="sexo">
-                    <strong>Sexo:</strong>
-                    <input type="checkbox" name="Sexo" id="imasc"> <label for="imasc"> Masculino</label>
-                    <input type="checkbox" name="Sexo" id="ifem"><label for="ifem"> Feminino</label>
+                    </div>
+                    <p>
+                        <label for="inome"><strong>Nome completo:</strong></label>
+                        <input type="text" name="Nome" id="inome" required placeholder="Nome do seu personagem" maxlength="30">
+                    </p>
                 
-                </p>
+                    <p id="sexo">
+                        <strong><label for="isexo">Sexo:</label></strong>
+                        <select name="sexo" id="isexo" required>
+                            <option value="mas">Masculino</option>
+                            <option value="fem">Feminino</option>
+                            <option value="nb">Não Binário</option>
+                            <option value="in">Indefinido</option>
+                        </select>
+                
+                    </p>
+                    <p id="raca">
+                        <strong><label for="iraca">Raça do personagem:</label></strong>
+                        <select name="raca" id="iraca" required>
+                            <option value="hum">Humano</option>
+                            <option value="elf">Elfo</option>
+                            <option value="orc">Orc</option>
+                            <option value="ana">Anão</option>
+                            <option value="peq">Pequenino</option>
+                            <option value="gob">Goblin</option>
+                        </select>
+                    </p>
 
-                <p id="raca">
-                    <strong>Raça do personagem:</strong>
-                    <p>Humano</p>
-                    <p>Elfo</p>
-                    <p>Orc</p>
-                    <p>Anão</p>
-                    <p>Pequenino</p>
-                    <p>Goblin</p>
+                    <p id="classe">
+                        <strong><label for="iclasse">Classe:</label></strong>
+                        <select name="classe" id="iclasse" required>
+                            <option value="cav">Cavaleiro</option>
+                            <option value="gue">Guerreiro</option>
+                            <option value="lad">Ladrão</option>
+                            <option value="arq">Arqueiro</option>
+                            <option value="mag">Mago</option>
+                            <option value="bru">Bruxo</option>
+                            <option value="pad">Padre</option>
+                        </select>
+                    </p>
+                    <p>
+                        <div id="fisico">
+                            <h2>Atributos Físicos</h2>
+                            <p>Defina os valores dos atributos do seu personagem</p>
+                        </div>
+                    </p>
 
-                </p>
+                    <p id="classe" style="padding-top: 0px;">
+                        <p>
+                            <strong><label for="iforca">Força Física:</label></strong>
+                            <input type="range" name="forca" id="iforca" max="10" value="0" required>
+                        </p>
+                        <p>
+                            <strong><label for="iint">Inteligência:</label></strong>
+                            <input type="range" name="int" id="iint" max="10" value="0" required>
+                        </p>
+                        <p>
+                            <strong><label for="iint">Detreza:</label></strong>
+                            <input type="range" name="des" id="ides" max="10" value="0" required>
+                        </p>
+                        <p>
+                            <strong><label for="isor">Sorte/Lábia:</label></strong>
+                            <input type="range" name="sor" id="isor" max="10" value="0" required>
+                        </p>
+                        <p>
+                            <strong><label for="ife">Fé/Devoção:</label></strong>
+                            <input type="range" name="fe" id="ife" max="10" value="0" required>
+                        </p>
+                    </p>
+                </div>
+                
 
-            </div>
+                <input type="submit" id="submit" value="AVENTURE-SE!">
+            </form>
         </section>
     </main>
     
